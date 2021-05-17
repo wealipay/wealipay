@@ -108,15 +108,7 @@
                 </fieldset>
               </form>
             </div>
-            <script>
-              $(function() {
-                $(".leftRi .form-group").each(function(i, th) {
-                  th = $(th);
-                  var pl = th.find("label").text();
-                  th.find("input,textarea").attr("placeholder", pl);
-                });
-              });
-            </script>
+            
           </div>
         </div>
       </div>
