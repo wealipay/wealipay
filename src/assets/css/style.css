@@ -1,0 +1,63 @@
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, /* text formatting elements 文本格式元素 */ form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */ th, td /* table elements 表格元素 */ { margin: 0; padding: 0; }
+/** 设置默认字体 **/
+body, button, input, select, textarea /* for ie */ {  font-size:12px;  font-family:"微软雅黑","Helvetica Neue",Helvetica,Arial!important; }
+h1, h2, h3, h4, h5, h6 { font-size: 12px; text-rendering: auto;}
+address, cite, dfn, em, var, i { font-style: normal; } /* 将斜体扶正 */
+code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一等宽字体 */
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+/** 重置列表元素 **/
+li { line-height:normal; }
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration:underline; }
+/** 重置表单元素 **/
+legend { color: #000; } /* for ie6 */
+fieldset, img { border: 0; } /* img 搭车：让链接里的 img 无边框 */
+button, input, select, textarea { font-size: 12px; } /* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+/*去除箭头*/
+textarea { resize: none; }
+/* 清除浮动 */
+.ks-clear:after, .clear:after { content: '\20'; display: block; height: 0; clear: both; }
+.ks-clear, .clear { *zoom: 1;}
+a:active, a:hover { color:inherit;}
+select,textarea,input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"],.uneditable-input { margin-bottom: 0;}
+*,*:before,*:after {  -webkit-box-sizing: content-box;  -moz-box-sizing: content-box;  box-sizing: content-box;}/*盒模型--区分所定宽度和border，padding的宽度*/
+.row { margin-right: 0!important; margin-left: 0!important;}
+/*-------------------</END 重置>-----------------------*/
+
+body { overflow-y:scroll; overflow-x: hidden; }
+.content{ width:100%;}
+.content-box:after{clear: both;content:'';display:block;visibility:none;}
+.tpl_one .col-md-12 { padding:0;}
+
+.maxsize {max-width: 1030px;margin: 0 auto;}
+.top .top-box .top-t{ float:left; line-height: 32px; padding-left: 10px; }
+.top .top-box .top-t i{ float:left; padding-right:5px; padding-top:10px;}
+.top .top-box .top-c{ float:right; line-height: 32px;padding-right: 10px;}
+.top .top-box .top-c a{ float:left; padding-left:10px; color:#FFF; font-size:12px;}
+.top .top-box .top-c a i{ float:left; padding-right:5px;  padding-top:10px;}
+.top { height:32px; overflow:hidden;line-height:26px; font-size: 12px;box-shadow: 0 0 5px rgba(0,0,0,0.3);}
+.top .top-box{max-width:1100px; margin:0 auto; color:#fff;}
+.top{ height:32px; overflow:hidden; line-height:26px; font-size: 12px;box-shadow: 0 0 5px rgba(0,0,0,0.3);}
+.top .top-box{max-width:1100px; margin:0 auto; color:#fff;}
+.photo .row [class*="col-md-"] {margin-left: 0 !important;}
+.p_prox .pro-list .col-md-3 {padding: 0;}
+.fieldset-style .div1 span {width: auto;display: inherit;}
+
+@media screen and (max-width:1030px) {
+	.content-box{ max-width:1030px; margin:20px 10px 0px;}
+}
+@media screen and (max-width:1120px) {
+	.top .top-box span{ padding-left:20px;}
+}
+
+@media screen and (max-width: 600px) {
+	.top .top-box .top-t{ display:none;}
+}
+@media screen and (max-width:1120px) {
+	.top .top-box span{ padding-left:20px;}
+}
