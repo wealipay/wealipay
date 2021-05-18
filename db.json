@@ -1,0 +1,34 @@
+{
+    "navbar": [
+       {
+          "id": 1,
+          "name": "首页",
+          "link": "/"
+       },
+       {
+          "id": 2,
+          "name": "支付宝",
+          "link": "/alipay"
+       },
+       {
+          "id": 3,
+          "name": "邀请有奖",
+          "link": "/invite"
+       },
+       {
+          "id": 4,
+          "name": "支付宝群",
+          "link": "/alipaychat"
+       },
+       {
+          "id": 5,
+          "name": "微信群",
+          "link": "/wechat"
+       },
+       {
+          "id": 6,
+          "name": "关于我们",
+          "link": "/about"
+       }
+    ]
+ }
