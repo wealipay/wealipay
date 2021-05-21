@@ -13,13 +13,9 @@
           <div class="module-wid albumbox">
             <ul class="album clearfix">
               <li class="clearfix" v-for="item in hots" :key="item">
-                <a title="淮北参观学习" href="/Album-detail-album_id-76976.html" class="Themefonthover">
+                <a title="淮北参观学习" :href="item.img" class="Themefonthover">
                   <div class="albumimg">
-                    <img
-                      title="淮北参观学习"
-                      alt="淮北参观学习"
-                      :src="item.img"
-                    />
+                    <img :title="item.title" :alt="item.title" src="item.img" />
                   </div>
                   <p class="overflow albumtxt">{{item.title}}</p>
                 </a>
@@ -32,6 +28,7 @@
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
   name: "TplEight",
   props: {
