@@ -30,13 +30,13 @@
       {
          "id": 1,
          "title": "支付宝5月消费券",
-         "img": "assets/images/alipay/coupon.jpg",
+         "img": "/images/alipay/coupon.jpg",
          "link": "/detail/1"
       },
       {
          "id": 2,
          "title": "中国银行话费充值优惠",
-         "img": "assets/images/other/bank.jpg",
+         "img": "/images/other/bank.jpg",
          "link": "/detail/2"
       }
    ]
