@@ -6,7 +6,7 @@
         <tpl-two></tpl-two>
         <tpl-three></tpl-three>
         <tpl-four></tpl-four>
-        <tpl-eight></tpl-eight>
+        <tpl-eight :hots="hot"></tpl-eight>
         <tpl-seven></tpl-seven>
         <tpl-six></tpl-six>
         <tpl-line></tpl-line>
@@ -44,7 +44,6 @@ export default {
       db()
         .then(res => {
           hot.value = res.hot;
-          alert(hot);
         })
         .catch(err => {});
     });

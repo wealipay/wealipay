@@ -21,7 +21,7 @@ export default {
   setup() {
     const navbar = ref([]);
     db().then(res => {
-      navbar.value=res;
+      navbar.value=res.navbar;
     });
     return {
       navbar
