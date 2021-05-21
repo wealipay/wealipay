@@ -1,44 +1,9 @@
 <template>
   <div class="NavBoxPublic" id="NavBoxPublic">
     <ul class="navPublic">
-      <li>
-        <a class="Themefont " href="index.html">
-          首页
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="Product-index.html">
-          产品展示
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="Article-index.html">
-          新闻动态
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="index.htmlAlbum.html">
-          图库展示
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="index.htmlAbout.html">
-          公司介绍
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="index.htmlMessage.html">
-          留言反馈
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="index.htmlContact.html">
-          联系我们
-        </a>
-      </li>
-      <li>
-        <a class="Themefont " href="index.htmlLbs.html">
-          LBS
+      <li v-for="item in navbar" :key="item">
+        <a class="Themefont" :href="item.link">
+          {{item.name}}
         </a>
       </li>
     </ul>
@@ -47,7 +12,17 @@
   </div>
 </template>
 <script>
+import { ref, onMounted } from "vue";
+import { db } from "network/db";
 export default {
-    name:"MNavbar"
+  name: "MNavbar",
+  setup() {
+    const navbar = ref([]);
+    onMounted(() => {
+      db().then(res=>{
+        navbar.value=res;
+      })
+    });
+  }
 };
 </script>

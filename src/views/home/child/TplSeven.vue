@@ -5,9 +5,9 @@
         <div class="articleLabel" id="md_articleLabel" dataid="0">
           <div class="artLabel module-wid">
             <div class="homeTwo-tit Themefont">
-              <i class="theme238 theme-jinlingyingcaiwangtubiao29"></i>
+              <i><img src="~assets/images/layout/new.png" style="width:10%;"></i>
               <span class="Themeborder overflow" data-design-rel="articleLabel"
-                >最新资讯</span
+                >最新活动</span
               >
             </div>
             <ul class="artLabelList clearfix">

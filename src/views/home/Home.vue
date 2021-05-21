@@ -6,9 +6,8 @@
         <tpl-two></tpl-two>
         <tpl-three></tpl-three>
         <tpl-four></tpl-four>
-        <tpl-five></tpl-five>
-        <tpl-seven></tpl-seven>
         <tpl-eight></tpl-eight>
+        <tpl-seven></tpl-seven>
         <tpl-six></tpl-six>
         <tpl-line></tpl-line>
       </div>
@@ -20,11 +19,12 @@ import TplOne from "views/home/child/TplOne";
 import TplTwo from "views/home/child/TplTwo";
 import TplThree from "views/home/child/TplThree";
 import TplFour from "views/home/child/TplFour";
-import TplFive from "views/home/child/TplFive";
 import TplSix from "views/home/child/TplSix";
 import TplSeven from "views/home/child/TplSeven";
 import TplEight from "views/home/child/TplEight";
 import TplLine from "views/home/child/TplLine";
+import { db } from "network/db";
+import { onMounted, ref } from "vue";
 
 export default {
   name: "Home",
@@ -33,11 +33,24 @@ export default {
     TplTwo,
     TplThree,
     TplFour,
-    TplFive,
     TplSix,
     TplSeven,
     TplEight,
     TplLine
+  },
+  setup() {
+    const hot = ref([]);
+    onMounted(() => {
+      db()
+        .then(res => {
+          hot.value = res.hot;
+          alert(hot);
+        })
+        .catch(err => {});
+    });
+    return {
+      hot
+    };
   }
 };
 </script>

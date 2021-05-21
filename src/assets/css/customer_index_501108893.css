@@ -1570,7 +1570,6 @@ pre {
 .product .product-box .thumbnail .div-img {
   width: 100%;
   height: 210px;
-  overflow: hidden;
 }
 
 .product .div-img img {

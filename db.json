@@ -1,34 +1,43 @@
 {
-    "navbar": [
-       {
-          "id": 1,
-          "name": "首页",
-          "link": "/"
-       },
-       {
-          "id": 2,
-          "name": "支付宝",
-          "link": "/alipay"
-       },
-       {
-          "id": 3,
-          "name": "邀请有奖",
-          "link": "/invite"
-       },
-       {
-          "id": 4,
-          "name": "支付宝群",
-          "link": "/alipaychat"
-       },
-       {
-          "id": 5,
-          "name": "微信群",
-          "link": "/wechat"
-       },
-       {
-          "id": 6,
-          "name": "关于我们",
-          "link": "/about"
-       }
-    ]
- }
+   "navbar": [
+      {
+         "id": 1,
+         "name": "首页",
+         "link": "/"
+      },
+      {
+         "id": 2,
+         "name": "支付宝",
+         "link": "/alipay"
+      },
+      {
+         "id": 3,
+         "name": "邀请有奖",
+         "link": "/invite"
+      },
+      {
+         "id": 4,
+         "name": "聊天群",
+         "link": "/chat"
+      },
+      {
+         "id": 5,
+         "name": "关于我们",
+         "link": "/about"
+      }
+   ],
+   "hot": [
+      {
+         "id": 1,
+         "title": "支付宝5月消费券",
+         "img": "images/alipay/coupon.jpg",
+         "link": "/detail/1"
+      },
+      {
+         "id": 2,
+         "title": "中国银行话费充值优惠",
+         "img": "images/other/bank.jpg",
+         "link": "/detail/2"
+      }
+   ]
+}

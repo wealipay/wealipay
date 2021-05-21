@@ -5,9 +5,9 @@
         <div class="album" id="md_album">
           <!-- 图库组件 -->
           <div class="homeTwo-tit Themefont">
-            <i class="theme238 theme-tupian"></i>
+            <i><img src="~assets/images/layout/hot.png" style="width:10%;margin-top:20px;"></i>
             <span class="Themeborder overflow" data-design-rel="album"
-              >精彩图片</span
+              >热门活动</span
             >
           </div>
           <div class="module-wid albumbox">
