@@ -18,7 +18,7 @@
                     <img
                       title="淮北参观学习"
                       alt="淮北参观学习"
-                      :src="~item.img"
+                      :src="item.img"
                     />
                   </div>
                   <p class="overflow albumtxt">{{item.title}}</p>
