@@ -7,9 +7,9 @@
         <notice></notice>
         <tab></tab>
         <hot :hots="hot"></hot>
-        <new></new>
+        <new :news="news"></new>
         <message></message>
-        <footer></footer>            
+        <footer></footer>
       </div>
     </div>
   </div>
