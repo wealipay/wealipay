@@ -5,7 +5,7 @@
         <div class="articleLabel" id="md_articleLabel" dataid="0">
           <div class="artLabel module-wid">
             <div class="homeTwo-tit Themefont">
-              <i><img src="~assets/images/layout/new.png" style="width:10%;"></i>
+              <i><img src="/images/layout/new.png" style="width:10%;"></i>
               <span class="Themeborder overflow" data-design-rel="articleLabel"
                 >最新活动</span
               >

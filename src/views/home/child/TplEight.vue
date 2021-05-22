@@ -6,16 +6,16 @@
           <!-- 图库组件 -->
           <div class="homeTwo-tit Themefont">
             <i>
-              <img src="~assets/images/layout/hot.png" style="width:10%;margin-top:20px;" />
+              <img src="/images/layout/hot.png" style="width:10%;margin-top:20px;" />
             </i>
             <span class="Themeborder overflow" data-design-rel="album">热门活动</span>
           </div>
           <div class="module-wid albumbox">
             <ul class="album clearfix">
-              <li class="clearfix" v-for="item in hots" :key="item">
-                <a title="淮北参观学习" :href="item.img" class="Themefonthover">
+              <li class="clearfix" v-for="item in hots" :key="item.id">
+                <a title="淮北参观学习" href @click.prevent="goDetail(item.id)" class="Themefonthover">
                   <div class="albumimg">
-                    <img :title="item.title" :alt="item.title" src="item.img" />
+                    <img :title="item.title" :alt="item.title" :src="item.img" />
                   </div>
                   <p class="overflow albumtxt">{{item.title}}</p>
                 </a>
@@ -29,6 +29,7 @@
 </template>
 <script>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 export default {
   name: "TplEight",
   props: {
@@ -38,6 +39,15 @@ export default {
         return [];
       }
     }
+  },
+  setup() {
+    const router = useRouter();
+    const goDetail = id => {
+      router.push({ path: "/detail", query: { id: id } });
+    };
+    return {
+      goDetail
+    };
   }
 };
 </script>

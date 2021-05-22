@@ -31,13 +31,31 @@
          "id": 1,
          "title": "支付宝5月消费券",
          "img": "/images/alipay/coupon.jpg",
-         "link": "/detail/1"
+         "link": "/detail/h1"
       },
       {
          "id": 2,
          "title": "中国银行话费充值优惠",
          "img": "/images/other/bank.jpg",
-         "link": "/detail/2"
+         "link": "/detail/h2"
+      }
+   ],
+   "new": [
+      {
+         "id": 1,
+         "title": "支付宝邀请新人有奖活动",
+         "date": "2021-6-1",
+         "img": "/images/alipay/alipay.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n1"
+      },
+      {
+         "id": 2,
+         "title": "哔哩哔哩邀请有奖活动",
+         "date": "2021-6-1",
+         "img": "/images/other/blibli.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n2"
       }
    ]
 }

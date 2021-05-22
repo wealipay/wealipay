@@ -4,6 +4,7 @@ const Alipay = () => import("../views/alipay/Alipay");
 const Invite = () => import("../views/invite/Invite");
 const Chat = () => import("../views/chat/Chat");
 const About = () => import("../views/about/About");
+const Detail = () => import("../views/detail/Detail");
 
 const routes = [
   {
@@ -36,6 +37,14 @@ const routes = [
     component: Chat,
     meta: {
       title: "聊天群"
+    }
+  },
+  {
+    path: "/detail",
+    name: "Detail",
+    component: Detail,
+    meta: {
+      title: "活动详情"
     }
   },
   {
