@@ -42,7 +42,7 @@
    ],
    "new": [
       {
-         "id": 1,
+         "id": 3,
          "title": "支付宝邀请新人有奖活动",
          "date": "2021-6-1",
          "img": "/images/alipay/alipay.jpg",
@@ -50,7 +50,7 @@
          "link": "/detail/n1"
       },
       {
-         "id": 2,
+         "id": 4,
          "title": "哔哩哔哩邀请有奖活动",
          "date": "2021-6-1",
          "img": "/images/other/blibli.jpg",

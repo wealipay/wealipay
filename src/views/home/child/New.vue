@@ -12,31 +12,23 @@
             </div>
             <ul class="artLabelList clearfix">
               <li class="clearfix" v-for="item in news" :key="item.id">
-                <a href="index.htmlArticle-detail-id-771844.html" class="clearfix Themefonthover">
+                <a href @click.prevent="goDetails(item.id)" class="clearfix Themefonthover">
                   <div class="arttxt fl">
                     <span>
-                      07-10
-                      <i>2017</i>
+                      {{item.date}}
+                      <i>{{item.year}}</i>
                     </span>
-                    <h3 class="overflow">香港各界对主席重要讲话反向热烈</h3>
-                    <p>习近平主席1日在出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府...</p>
+                    <h3 class="overflow">{{item.title}}</h3>
+                    <p>{{item.des}}</p>
                   </div>
                   <div class="artimg fr">
-                    <img
-                      alt="香港各界对主席重要讲话反向热烈"
-                      src="http://pic.files.mozhan.com/mozhan/20170710/92eba9314d42025b4240f8f9b0beaee7.jpg?x-oss-process=image/resize,limit_0,m_fill,w_450,h_338"
-                    />
+                    <img :alt="item.des" :src="item.img" />
                   </div>
                 </a>
               </li>
             </ul>
             <div class="seeMoreBox">
-              <a
-                title="查看更多"
-                href="Article-index.html"
-                class="Themebghover Themeborderhover seeMore"
-                role="button"
-              >查看更多</a>
+              <a title="查看更多" href class="Themebghover Themeborderhover seeMore" role="button">查看更多</a>
             </div>
 
             <!-- <div class="ImgBox">
@@ -54,6 +46,8 @@
   </div>
 </template>
 <script>
+import { onMounted, ref } from "vue";
+import { useRouter } from "vue-router";
 export default {
   name: "New",
   props: {
@@ -63,6 +57,17 @@ export default {
         return [];
       }
     }
+  },
+  setup() {
+    const router = useRouter();
+    onMounted(() => {
+      const goDetails = pid => {
+        router.push({ path: "/detail", query: { pid: pid } });
+      };
+    });
+    return {
+      goDetails
+    };          
   }
 };
 </script>
