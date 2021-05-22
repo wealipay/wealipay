@@ -50,7 +50,7 @@ import CNavbar from "components/common/navbar/CNavbar";
 import MNavbar from "components/common/navbar/MNavbar";
 import FmNavbar from "components/common/navbar/FmNavbar";
 export default {
-  name: "TplOne",
+  name: "Header",
   components:{
     CNavbar,
     MNavbar,

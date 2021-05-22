@@ -43,6 +43,6 @@
 </template>
 <script>
 export default {
-  name: "TplTwo",
+  name: "Banner",
 };
 </script>

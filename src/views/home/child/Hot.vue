@@ -31,7 +31,7 @@
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 export default {
-  name: "TplEight",
+  name: "Hot",
   props: {
     hots: {
       type: Array,

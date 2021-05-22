@@ -138,6 +138,6 @@
 </template>
 <script>
 export default {
-  name: "TplThree",
+  name: "Notice",
 };
 </script>

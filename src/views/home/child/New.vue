@@ -122,6 +122,6 @@
 </template>
 <script>
 export default {
-    name:"TplSeven"
+    name:"New"
 }
 </script>

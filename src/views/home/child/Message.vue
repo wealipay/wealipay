@@ -117,6 +117,6 @@
 </template>
 <script>
 export default {
-    name:"TplSix"
+    name:"Message"
 }
 </script>

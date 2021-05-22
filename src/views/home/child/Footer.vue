@@ -51,6 +51,6 @@
 </template>
 <script>
 export default {
-  name: "TplLine",
+  name: "Footer",
 };
 </script>
