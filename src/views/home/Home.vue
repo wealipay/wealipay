@@ -4,8 +4,7 @@
       <div class="container">
         <header></header>
         <banner></banner>
-        <notice></notice>
-        <tab></tab>
+        <tab :tabClick="tab" :titles="['薅羊毛','邀请有奖','全栈服务']"></tab>{{imitid}}
         <hot :hots="hot"></hot>
         <new :news="news"></new>
         <message></message>
@@ -32,7 +31,6 @@ export default {
   components: {
     Header,
     Banner,
-    Notice,
     Tab,
     Message,
     New,
@@ -42,6 +40,10 @@ export default {
   setup() {
     const hot = ref([]);
     const news = ref([]);
+    const imitid = ref(0);
+    const tab = index => {
+      imitid.value = index;
+    };
     onMounted(() => {
       db()
         .then(res => {

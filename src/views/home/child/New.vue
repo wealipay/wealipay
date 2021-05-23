@@ -60,11 +60,9 @@ export default {
   },
   setup() {
     const router = useRouter();
-    onMounted(() => {
-      const goDetails = pid => {
-        router.push({ path: "/detail", query: { pid: pid } });
-      };
-    });
+      const goDetails = id => {
+        router.push({ path: "/detail", query: { id: id } });
+    };
     return {
       goDetails
     };          

@@ -15,14 +15,14 @@
           </div>
           <div class="articleTab fr">
             <ul class="tabTit clearfix">
-              <li class="Themefont Themeborder Themefonthover Themeborderhover">
-                <span class="overflow">政务要闻</span>
-              </li>
-              <li class="Themefonthover Themeborderhover">
-                <span class="overflow">部门动态</span>
-              </li>
-              <li class="Themefonthover Themeborderhover">
-                <span class="overflow">乡镇动态</span>
+              <li
+                @click="liClick(index)"
+                v-for="(item,index) in titles"
+                :key="index"
+                :class="{Themeborder:curIndex===index, Themefont:curIndex===index}"
+                class="Themefonthover Themeborderhover"
+              >
+                <span class="overflow">{{item}}</span>
               </li>
               <!--<li class="Themefont Themeborder Themehover Themeborderhover">政务要闻</li> -->
               <!--<li class="Themehover Themeborderhover">部门动态</li>-->
@@ -50,36 +50,6 @@
                   <i class="fr">[2017-07-10]</i>
                 </a>
               </li>
-              <li>
-                <a
-                  title="美军驱逐舰进中国西沙群岛 中方：严重军事挑衅"
-                  href="index.htmlArticle-detail-id-771846.html"
-                  class="Themefonthover"
-                >
-                  <span class="overflow fl">美军驱逐舰进中国西沙群岛 中方：严重军事挑衅</span>
-                  <i class="fr">[2017-07-10]</i>
-                </a>
-              </li>
-              <li>
-                <a
-                  title="柬埔寨三省打击跨国网络 37名中国人被捕"
-                  href="index.htmlArticle-detail-id-771847.html"
-                  class="Themefonthover"
-                >
-                  <span class="overflow fl">柬埔寨三省打击跨国网络 37名中国人被捕</span>
-                  <i class="fr">[2017-07-10]</i>
-                </a>
-              </li>
-              <li>
-                <a
-                  title="学习贯彻书记对北京城市总体规划重要讲话"
-                  href="index.htmlArticle-detail-id-771848.html"
-                  class="Themefonthover"
-                >
-                  <span class="overflow fl">学习贯彻书记对北京城市总体规划重要讲话</span>
-                  <i class="fr">[2017-07-10]</i>
-                </a>
-              </li>
             </ul>
             <ul class="tabList">
               <div class="not">亲，没有找到内容</div>
@@ -88,36 +58,33 @@
               <div class="not">亲，没有找到内容</div>
             </ul>
           </div>
-          <script>
-  $(function() {
-    $(".articleImg a:first").show();
-    $(".tabTit li").click(function() {
-      var th = $(this),
-        idx = th.index();
-      th.addClass("Themefont Themeborder")
-        .siblings()
-        .removeClass("Themefont Themeborder");
-      $(".articleImg a")
-        .eq(idx)
-        .show()
-        .siblings()
-        .hide();
-      th.parent()
-        .siblings(".tabList")
-        .eq(idx)
-        .show()
-        .siblings(".tabList")
-        .hide();
-    });
-  });
-          </script>
         </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-  name: "Tab"
+  name: "Tab",
+  setup(props, { emit }) {
+    const curIndex = ref(0);
+    const liClick = index => {
+      curIndex.value = index;
+      emit("tabClick", index);
+    };
+    return {
+      curIndex,
+      liClick
+    };
+  },
+  props: {
+    titles: {
+      type: Array,
+      default() {
+        return [];
+      }
+    }
+  }
 };
 </script>
