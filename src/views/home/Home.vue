@@ -4,7 +4,8 @@
       <div class="container">
         <header></header>
         <banner></banner>
-        <tab :tabClick="tab" :titles="['薅羊毛','邀请有奖','全栈服务']"></tab>{{imitid}}
+        <tab :tabClick="tab" :titles="['薅羊毛','邀请有奖','全栈服务']"></tab>
+        {{imitid}}
         <hot :hots="hot"></hot>
         <new :news="news"></new>
         <message></message>
@@ -23,8 +24,8 @@ import New from "views/home/child/New";
 import Hot from "views/home/child/Hot";
 import Footer from "views/home/child/Footer";
 
-import { db } from "network/db";
-import { onMounted, ref } from "vue";
+import { db, getType } from "network/db";
+import { onMounted, ref, reactive } from "vue";
 
 export default {
   name: "Home",
@@ -44,6 +45,11 @@ export default {
     const tab = index => {
       imitid.value = index;
     };
+    const Goods = reactive({
+      sales: { page: 0, list: [] },
+      new: { page: 0, list: [] },
+      recommend: { page: 0, list: [] }
+    });
     onMounted(() => {
       db()
         .then(res => {
@@ -51,10 +57,21 @@ export default {
           news.value = res.new;
         })
         .catch(err => {});
+      getType("sales").then(res => {
+        Goods.sales.list = res.goods.data;
+      });
+      getType("recommend").then(res => {
+        Goods.recommend.list = res.goods.data;
+      });
+      getType("news").then(res => {
+        Goods.new.list = res.goods.data;
+      });
+      
     });
     return {
       hot,
-      news
+      news,
+      getType
     };
   }
 };

@@ -71,7 +71,6 @@ export default {
     const curIndex = ref(0);
     const liClick = index => {
       curIndex.value = index;
-      alert(curIndex);
     };
     return {
       curIndex,
