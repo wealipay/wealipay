@@ -67,11 +67,11 @@
 import { ref } from "vue";
 export default {
   name: "Tab",
-  setup(props, { emit }) {
+  setup() {
     const curIndex = ref(0);
     const liClick = index => {
       curIndex.value = index;
-      emit("tabClick", index);
+      alert(curIndex);
     };
     return {
       curIndex,
