@@ -73,7 +73,7 @@ export default {
       getType("news").then(res => {
         goods.new.list = res.goods.data;
       });
-      yellow.value=goods.sales;
+      yellow.value=goods.sales.list.value;
     });
     return {
       hot,
