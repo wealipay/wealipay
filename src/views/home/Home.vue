@@ -10,6 +10,10 @@
         <new :news="news"></new>
         <message></message>
         <footer></footer>
+        <span v-for="item in yellow" :key="item">
+
+          {{item}}
+        </span>
       </div>
     </div>
   </div>
@@ -42,15 +46,18 @@ export default {
     const hot = ref([]);
     const news = ref([]);
     const imitid = ref(0);
+    const yellow=ref([]);
     const tab = index => {
       imitid.value = index;
     };
-    const Goods = reactive({
+    const goods = reactive({
       sales: { page: 0, list: [] },
       new: { page: 0, list: [] },
       recommend: { page: 0, list: [] }
     });
     onMounted(() => {
+      console.log(55);
+      
       db()
         .then(res => {
           hot.value = res.hot;
@@ -58,20 +65,21 @@ export default {
         })
         .catch(err => {});
       getType("sales").then(res => {
-        Goods.sales.list = res.goods.data;
+        goods.sales.list = res.goods.data;
       });
       getType("recommend").then(res => {
-        Goods.recommend.list = res.goods.data;
+        goods.recommend.list = res.goods.data;
       });
       getType("news").then(res => {
-        Goods.new.list = res.goods.data;
+        goods.new.list = res.goods.data;
       });
-      
+      yellow.value=goods.sales;
     });
     return {
       hot,
       news,
-      getType
+      getType,
+      yellow
     };
   }
 };
