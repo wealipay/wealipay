@@ -1,197 +1,63 @@
 {
-   "slides": [
-      {
-         "id": 6,
-         "title": "融职图书商城",
-         "url": "https://www.eduwork.cn",
-         "img": "ad/2020-0820-5f3dfe85ae3fd.png",
-         "status": 1,
-         "seq": 1,
-         "created_at": "2021-01-04T08:46:56.000000Z",
-         "updated_at": "2021-01-04T08:46:56.000000Z",
-         "img_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/ad/2020-0820-5f3dfe85ae3fd.png"
-      },
-      {
-         "id": 7,
-         "title": "融职图书商城",
-         "url": "https://www.eduwork.cn",
-         "img": "ad/2020-0820-5f3dfe9530bfd.png",
-         "status": 1,
-         "seq": 2,
-         "created_at": "2021-01-04T08:46:56.000000Z",
-         "updated_at": "2021-01-04T08:46:56.000000Z",
-         "img_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/ad/2020-0820-5f3dfe9530bfd.png"
-      },
-      {
-         "id": 8,
-         "title": "融职图书商城",
-         "url": "https://www.eduwork.cn",
-         "img": "ad/2020-0820-5f3dfe7756215.png",
-         "status": 1,
-         "seq": 3,
-         "created_at": "2021-01-04T08:46:56.000000Z",
-         "updated_at": "2021-01-04T08:46:56.000000Z",
-         "img_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/ad/2020-0820-5f3dfe7756215.png"
-      }
-   ],
-   "categories": [
+   "navbar": [
       {
          "id": 1,
-         "pid": 0,
-         "name": "前沿",
-         "level": 1,
-         "status": 1,
-         "children": [
-            {
-               "id": 2,
-               "pid": 1,
-               "name": "区块链",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 3,
-               "pid": 1,
-               "name": "人工智能",
-               "level": 2,
-               "status": 1
-            }
-         ]
+         "name": "首页",
+         "link": "/"
+      },
+      {
+         "id": 2,
+         "name": "支付宝",
+         "link": "/alipay"
+      },
+      {
+         "id": 3,
+         "name": "邀请有奖",
+         "link": "/invite"
       },
       {
          "id": 4,
-         "pid": 0,
-         "name": "前端",
-         "level": 1,
-         "status": 1,
-         "children": [
-            {
-               "id": 5,
-               "pid": 4,
-               "name": "小程序",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 6,
-               "pid": 4,
-               "name": "JavaScript",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 7,
-               "pid": 4,
-               "name": "HTML/CSS",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 8,
-               "pid": 4,
-               "name": "Vue",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 9,
-               "pid": 4,
-               "name": "React",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 10,
-               "pid": 4,
-               "name": "ES6",
-               "level": 2,
-               "status": 1
-            },
-            {
-               "id": 11,
-               "pid": 4,
-               "name": "Node.js",
-               "level": 2,
-               "status": 1
-            }
-         ]
+         "name": "聊天群",
+         "link": "/chat"
+      },
+      {
+         "id": 5,
+         "name": "关于我们",
+         "link": "/about"
       }
    ],
-   "goods": {
-      "current_page": 1,
-      "data": [
-         {
-            "id": 1,
-            "title": "《产品经理手册》",
-            "price": 45,
-            "stock": 32,
-            "sales": 0,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e17d6ed7e8.png",
-            "description": "产品设计 / 《产品经理手册》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e17d6ed7e8.png"
-         },
-         {
-            "id": 2,
-            "title": "《Linux私房菜》",
-            "price": 55,
-            "stock": 23,
-            "sales": 0,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e177b79824.png",
-            "description": "云计算 / 《Linux私房菜》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e177b79824.png"
-         },
-         {
-            "id": 3,
-            "title": "《Linux私房菜》",
-            "price": 55,
-            "stock": 23,
-            "new": 1,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e177b79824.png",
-            "description": "云计算 / 《Linux私房菜》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e177b79824.png"
-         },
-         {
-            "id": 4,
-            "title": "《Linux私房菜》",
-            "price": 55,
-            "stock": 23,
-            "new": 0,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e177b79824.png",
-            "description": "云计算 / 《Linux私房菜》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e177b79824.png"
-         },
-         {
-            "id": 5,
-            "title": "《Linux私房菜》",
-            "price": 55,
-            "stock": 23,
-            "recommend": 0,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e177b79824.png",
-            "description": "云计算 / 《Linux私房菜》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e177b79824.png"
-         },
-         {
-            "id": 6,
-            "title": "《Linux私房菜》",
-            "price": 55,
-            "stock": 23,
-            "recommend": 1,
-            "collects_count": 0,
-            "cover": "product/2020-0820-5f3e177b79824.png",
-            "description": "云计算 / 《Linux私房菜》",
-            "cover_url": "https://wqqx2020.oss-cn-beijing.aliyuncs.com/product/2020-0820-5f3e177b79824.png"
-         }
-      ],
-      "first_page_url": "http://bookshopapi.mamp/api/index?recommend=0&sales=1&new=0&page=1",
-      "from": 1,
-      "next_page_url": "http://bookshopapi.mamp/api/index?recommend=0&sales=1&new=0&page=2",
-      "path": "http://bookshopapi.mamp/api/index",
-      "per_page": 10,
-      "to": 10
-   }
+   "hot": [
+      {
+         "id": 1,
+         "title": "支付宝5月消费券",
+         "img": "/images/alipay/coupon.jpg",
+         "link": "/detail/h1"
+      },
+      {
+         "id": 2,
+         "title": "中国银行话费充值优惠",
+         "img": "/images/other/bank.jpg",
+         "link": "/detail/h2"
+      }
+   ],
+   "new": [
+      {
+         "id": 1,
+         "title": "支付宝邀请新人有奖活动",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/alipay/alipay.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n1"
+      },
+      {
+         "id": 2,
+         "title": "哔哩哔哩邀请有奖活动",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/other/blibli.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n2"
+      }
+   ]
 }
