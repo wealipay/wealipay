@@ -59,5 +59,51 @@
          "des": "合作共赢，红包对半！",
          "link": "/detail/n2"
       }
+   ],
+   "activity": [
+      {
+         "id": 1,
+         "title": "支付宝邀请新人有奖活动",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/alipay/alipay.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n1",
+         "money": 1,
+         "invite": 1
+      },
+      {
+         "id": 2,
+         "title": "中国银行话费充值优惠",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/other/bank.jpg",
+         "des": "每月话费充值优惠！",
+         "link": "/detail/n1",
+         "money": 0,
+         "invite": 0
+      },
+      {
+         "id": 3,
+         "title": "哔哩哔哩邀请有奖活动",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/other/blibli.jpg",
+         "des": "合作共赢，红包对半！",
+         "link": "/detail/n1",
+         "money": 1,
+         "invite": 1
+      },
+      {
+         "id": 4,
+         "title": "测试数据",
+         "year": 2021,
+         "date": "06-01",
+         "img": "/images/other/bank.jpg",
+         "des": "每月话费充值优惠！",
+         "link": "/detail/n1",
+         "money": 0,
+         "invite": 0
+      }
    ]
 }
