@@ -1,18 +1,21 @@
 <template>
-  <div id="body" style="overflow-x:hidden; overflow-y: scroll;outline: none;" class="Pagebg">
+  <div
+    id="body"
+    style="overflow-x:hidden; overflow-y: scroll;outline: none;"
+    class="Pagebg"
+  >
     <div class="Pagebg">
       <div class="container">
         <header></header>
         <banner></banner>
-        <tab :tabClick="tab" :titles="['薅羊毛','邀请有奖','全栈服务']"></tab>
-        {{imitid}}
+        <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '全栈服务']"></tab>
+        {{ imitid }}
         <hot :hots="hot"></hot>
         <new :news="news"></new>
         <message></message>
         <footer></footer>
         <span v-for="item in yellow" :key="item">
-
-          {{item}}
+          {{ item }}
         </span>
       </div>
     </div>
@@ -40,47 +43,40 @@ export default {
     Message,
     New,
     Hot,
-    Footer
+    Footer,
   },
   setup() {
     const hot = ref([]);
     const news = ref([]);
     const imitid = ref(0);
-    const yellow=ref([]);
-    const tab = index => {
+    const yellow = ref([]);
+    const tab = (index) => {
       imitid.value = index;
     };
     const goods = reactive({
-      sales: { page: 0, list: [] },
-      new: { page: 0, list: [] },
-      recommend: { page: 0, list: [] }
+      money: { page: 0, list: [] },
     });
     onMounted(() => {
       console.log(55);
-      
+
       db()
-        .then(res => {
+        .then((res) => {
           hot.value = res.hot;
           news.value = res.new;
         })
-        .catch(err => {});
-      getType("sales").then(res => {
-        goods.sales.list = res.goods.data;
+        .catch((err) => {});
+      getType("money").then((res) => {
+        alert(res);
+        goods.money.list = res;
       });
-      getType("recommend").then(res => {
-        goods.recommend.list = res.goods.data;
-      });
-      getType("news").then(res => {
-        goods.new.list = res.goods.data;
-      });
-      yellow.value=goods.sales.list.value;
+      yellow.value=goods.money;
     });
     return {
       hot,
       news,
       getType,
-      yellow
+      yellow,
     };
-  }
+  },
 };
 </script>

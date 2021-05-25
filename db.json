@@ -69,7 +69,7 @@
          "img": "/images/alipay/alipay.jpg",
          "des": "合作共赢，红包对半！",
          "link": "/detail/n1",
-         "money": 1,
+         "money": 0,
          "invite": 1
       },
       {
@@ -91,7 +91,7 @@
          "img": "/images/other/blibli.jpg",
          "des": "合作共赢，红包对半！",
          "link": "/detail/n1",
-         "money": 1,
+         "money": 0,
          "invite": 1
       },
       {
@@ -102,7 +102,7 @@
          "img": "/images/other/bank.jpg",
          "des": "每月话费充值优惠！",
          "link": "/detail/n1",
-         "money": 0,
+         "money": 1,
          "invite": 0
       }
    ]

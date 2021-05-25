@@ -5,8 +5,8 @@ export function db() {
   });
 }
 
-export function getType(type='sales',page=1){
+export function getType(type = 'money') {
   return request({
-    url:"/db?type + '=1&page=' + page"
+    url: '/activity?' + type + '=1'
   })
 }
