@@ -1,22 +1,14 @@
 <template>
-  <div
-    id="body"
-    style="overflow-x:hidden; overflow-y: scroll;outline: none;"
-    class="Pagebg"
-  >
+  <div id="body" style="overflow-x:hidden; overflow-y: scroll;outline: none;" class="Pagebg">
     <div class="Pagebg">
       <div class="container">
         <header></header>
         <banner></banner>
-        <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '全栈服务']"></tab>
-        {{ imitid }}
+        <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '自助服务']"></tab>
         <hot :hots="hot"></hot>
         <new :news="news"></new>
         <message></message>
         <footer></footer>
-        <span v-for="item in yellow" :key="item">
-          {{ item }}
-        </span>
       </div>
     </div>
   </div>
@@ -31,8 +23,8 @@ import New from "views/home/child/New";
 import Hot from "views/home/child/Hot";
 import Footer from "views/home/child/Footer";
 
-import { db, getType } from "network/db";
-import { onMounted, ref, reactive } from "vue";
+import { db} from "network/db";
+import { onMounted, ref, toRefs, reactive, computed } from "vue";
 
 export default {
   name: "Home",
@@ -43,40 +35,24 @@ export default {
     Message,
     New,
     Hot,
-    Footer,
+    Footer
   },
   setup() {
     const hot = ref([]);
     const news = ref([]);
-    const imitid = ref(0);
-    const yellow = ref([]);
-    const tab = (index) => {
+    const tab = index => {
       imitid.value = index;
     };
-    const goods = reactive({
-      money: { page: 0, list: [] },
-    });
     onMounted(() => {
-      console.log(55);
-
-      db()
-        .then((res) => {
-          hot.value = res.hot;
-          news.value = res.new;
-        })
-        .catch((err) => {});
-      getType("money").then((res) => {
-        alert(res);
-        goods.money.list = res;
+      db().then(res => {
+        hot.value = res.hot;
+        news.value = res.new;
       });
-      yellow.value=goods.money;
     });
     return {
       hot,
-      news,
-      getType,
-      yellow,
+      news
     };
-  },
+  }
 };
 </script>

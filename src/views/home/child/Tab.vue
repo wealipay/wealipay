@@ -30,32 +30,28 @@
               <!--<li class="Themehover Themeborderhover">媒体报道</li>-->
             </ul>
             <ul class="tabList" style="display:block;">
-              <li class="first">
-                <a
-                  title="香港各界对主席重要讲话反向热烈"
-                  href="index.htmlArticle-detail-id-771844.html"
-                  class="Themefont"
-                >
-                  <h3 class="overflow">香港各界对主席重要讲话反向热烈</h3>
-                  <p>习近平主席1日在出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府就职典礼时发表重要讲话，在香港社会引起强烈反响。香港各界人士认为，习主席的讲话为“一国两制”理论与实践的未来发展指明了方向、确认了准则，必将引领香港再创新的辉煌。</p>
-                </a>
-              </li>
-              <li>
-                <a
-                  title="深圳地铁回应女士车厢男多女少优先不等于专用"
-                  href="index.htmlArticle-detail-id-771845.html"
-                  class="Themefonthover"
-                >
-                  <span class="overflow fl">深圳地铁回应女士车厢男多女少优先不等于专用</span>
-                  <i class="fr">[2017-07-10]</i>
+              <li v-for="item in money" :key="item">
+                <a :title="item.title" :href="item.link" class="Themefonthover">
+                  <span class="overflow fl">{{item.title}}</span>
+                  <i class="fr">{{item.date}}</i>
                 </a>
               </li>
             </ul>
             <ul class="tabList">
-              <div class="not">亲，没有找到内容</div>
+              <li v-for="item in invite" :key="item">
+                <a :title="item.title" :href="item.link" class="Themefonthover">
+                  <span class="overflow fl">{{item.title}}</span>
+                  <i class="fr">{{item.date}}</i>
+                </a>
+              </li>
             </ul>
             <ul class="tabList">
-              <div class="not">亲，没有找到内容</div>
+              <li v-for="item in self" :key="item">
+                <a :title="item.title" :href="item.link" class="Themefonthover">
+                  <span class="overflow fl">{{item.title}}</span>
+                  <i class="fr">{{item.date}}</i>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -65,16 +61,34 @@
 </template>
 <script>
 import { ref } from "vue";
+import { getType } from "network/db";
 export default {
   name: "Tab",
   setup() {
     const curIndex = ref(0);
+    const money = ref([]);
+    const invite = ref([]);
+    const self = ref([]);
+
     const liClick = index => {
       curIndex.value = index;
     };
+    getType("money").then(res => {
+      money.value = res;
+    });
+    getType("invite").then(res => {
+      invite.value = res;
+    });
+    getType("self").then(res => {
+      self.value = res;
+    });
+
     return {
       curIndex,
-      liClick
+      liClick,
+      money,
+      invite,
+      self
     };
   },
   props: {
