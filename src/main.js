@@ -19,9 +19,15 @@ import "./assets/js/slider";
 import "./assets/js/banner";
 import "./assets/js/slide";
 import "./assets/js/bootstrap.min";
-import "./assets/js/page";                         
+import "./assets/js/page";                 
+import 'vant/lib/index.css';        
+import {Swipe,SwipeItem,Tab,Tabs} from 'vant'
 
 createApp(App)
   .use(store)
-  .use(router)
+  .use(router).
+  use(Swipe)
+  .use(SwipeItem)
+  .use(Tab)
+  .use(Tabs)
   .mount("#app");

@@ -2,7 +2,7 @@
   <div id="body" style="overflow-x:hidden; overflow-y: scroll;outline: none;" class="Pagebg">
     <div class="Pagebg">
       <div class="container">
-        <header></header>
+        <headers></headers>
         <banner></banner>
         <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '自助服务']"></tab>
         <hot :hots="hot"></hot>
@@ -14,7 +14,7 @@
   </div>
 </template>
 <script>
-import Header from "views/home/child/Header";
+import Headers from "views/home/child/Header";
 import Banner from "views/home/child/Banner";
 import Notice from "views/home/child/Notice";
 import Tab from "views/home/child/Tab";
@@ -29,7 +29,7 @@ import { onMounted, ref, toRefs, reactive, computed } from "vue";
 export default {
   name: "Home",
   components: {
-    Header,
+    Headers,
     Banner,
     Tab,
     Message,

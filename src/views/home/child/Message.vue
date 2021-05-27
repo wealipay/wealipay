@@ -14,29 +14,21 @@
             <div class="aboutbox clearfix">
               <div class="aboutimg fl">
                 <img
-                  src="http://pic.files.mozhan.com/mozhan/20170710/423780aab36f2e92550c39f29f281a90.jpg"
+                  src="/images/layout/about.jpg"
                   alt=""
                 />
               </div>
               <div class="abouttxt fr">
                 <p>
-                  &nbsp;&nbsp;&nbsp;&nbsp;政府，即国家权力机关的执行机关，是国家行政机关。政府是维护国家安全，消除社会隐患、促进科学技术进步、提高国民生产能力、优化社会结构、研究社会现象的特殊机构。国家公共行政权力的象征、承载体和实际行为体。政府发布的行政命令、行政决策、行政法规、行政司法、行政裁决、行政惩处、行政监督等等，都应符合宪法和有关法律的原则和精神。<br />
+                  &emsp;&emsp;WeAlipay于2021-06-01正式上线，始终以视频演示的方式薅不同平台的羊毛，主要以支付宝为主，分享相关的经验和技巧，并不定期更新最新内容，有兴趣的朋友可以加入群聊一起讨论，互帮互助，互利共赢！<br />
                 </p>
               </div>
             </div>
-            <p class="p2 fr clearfix">
-              <a
-                title="查看详情"
-                href="/About.html"
-                class="seeDetail overflow Themebg"
-                role="button"
-                >查看详情</a
-              >
-            </p>
+          
           </div>
         </div>
       </div>
-      <div class="fr wid50">
+      <div class="frwid50">
         <div class="column clearfix column1">
           <div class="form" id="md_form">
             <div class="home-tit clearfix">

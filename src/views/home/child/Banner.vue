@@ -8,28 +8,16 @@
               <div class="bannerEffect" id="pc_banner_content">
                 <div class="fullwidthbanner-container">
                   <div class="fullwidthbanner">
-                    <ul>
-                      <li
-                        data-transition="slideleft"
-                        data-slotamount="15"
-                        data-masterspeed="300"
-                      >
+                    <van-swipe :autoplay="3000" indicator-color="red">
+                      <van-swipe-item>
                         <img
-                          src="http://pic.files.mozhan.com/mozhan/20170710/cddeb9e65ae01ad028261a25f9af861a.jpg?x-oss-process=image/resize,limit_0,m_fill,w_1920,h_600"
-                          alt=""
+                          src="https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg"
                         />
-                      </li>
-                      <li
-                        data-transition="slideleft"
-                        data-slotamount="15"
-                        data-masterspeed="300"
-                      >
-                        <img
-                          src="http://pic.files.mozhan.com/mozhan/20170710/cddeb9e65ae01ad028261a25f9af861a.jpg?x-oss-process=image/resize,limit_0,m_fill,w_1920,h_600"
-                          alt=""
-                        />
-                      </li>
-                    </ul>
+                      </van-swipe-item>
+                      <van-swipe-item>
+                        <img src="https://gitee.com/wealipay/data/raw/master/images/swiper/banner2.jpg" />
+                      </van-swipe-item>
+                    </van-swipe>                                                                             
                   </div>
                 </div>
               </div>
@@ -43,6 +31,11 @@
 </template>
 <script>
 export default {
-  name: "Banner",
+  name: "Banner"
 };
 </script>
+<style>
+  .van-swipe{
+    margin:0;
+  }
+</style>
