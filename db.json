@@ -1,120 +1,160 @@
 {
-   "navbar": [
+   "activity": [
       {
+         "author": "龙阁",
+         "date": "06-01",
          "id": 1,
-         "name": "首页",
-         "link": "/"
+         "img": "/images/alipay/alipay.jpg",
+         "invite": 1,
+         "link": "/detail/n1",
+         "money": 0,
+         "rule": [
+            {
+               "des": "1.哔哩星球惊喜降临，活动奖励再升级！现邀请好友加入哔哩哔哩，你和好友一起赚红包！"
+            },
+            {
+               "des": "2.将本活动页面分享给好友，让好友通过你的分享链接下列载并登录 bilibili APP，好友可得1元新人红包。好友当天观（表看视频超过10分钟，你即可获得5元现金红包奖励。"
+            },
+            {
+               "des": "3.你邀请的好友在首次登录 bilibili App后的7天内，累计2天及3天均使用 bilibili aPp单天观看视频超过10分钟，你分别再得3至10元现金红包奖励，好友分别可赚1元红包奖。"
+            },
+            {
+               "des": "4.你邀请的好友自首次登录 bilibili app后的第8天开始起的60天内，使用 bilibili ApP每看6分钟视频，你可以获得\n0.08元，好友可以获得0.04元。每个好友每天有5次机会，在此期间内每个好友可使你最高累计得20元，每个好友自身最高累计可得10元。"
+            },
+            {
+               "des": "5.被邀请的好友使用的设备及手机号必须是之前从未下载过且从未登录过 bilibili App的才记为有效，手机号须为中国大陆地区归属。"
+            },
+            {
+               "des": "6.邀请好友数量无上限，邀请越多奖励越多，而且红包额度还可以升级哦！"
+            },
+            {
+               "des": "7.每次获取的现金红包奖励须在48小时审核通过后可提现，可提现余额须高于或等于最低提现额度（最低提现额度为0.3元）才可提现！"
+            }
+         ],
+         "self": "0",
+         "step": [
+            {
+               "des": "1. 通过各大应用商店下载哔哩哔哩app软件，并安装。",
+               "image": "https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg"
+            },
+            {
+               "des": "安装成功后填写邀请码即可",
+               "image": "https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg"
+            }
+         ],
+         "title": "支付宝邀请新人有奖活动",
+         "video": [
+            {
+               "cover": "https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg",
+               "src": "视频地址"
+            }
+         ],
+         "year": 2021
       },
       {
+         "date": "06-01",
+         "des": "每月话费充值优惠！",
          "id": 2,
-         "name": "支付宝",
-         "link": "/alipay"
+         "img": "/images/other/bank.jpg",
+         "invite": 0,
+         "link": "/detail/n1",
+         "money": 0,
+         "title": "中国银行话费充值优惠",
+         "year": 2021
       },
       {
+         "date": "06-01",
+         "des": "合作共赢，红包对半！",
          "id": 3,
-         "name": "邀请有奖",
-         "link": "/invite"
+         "img": "/images/other/blibli.jpg",
+         "invite": 1,
+         "link": "/detail/n1",
+         "money": 0,
+         "title": "哔哩哔哩邀请有奖活动",
+         "year": 2021
       },
       {
+         "date": "06-01",
+         "des": "每月话费充值优惠！",
          "id": 4,
-         "name": "聊天群",
-         "link": "/chat"
+         "img": "/images/other/bank.jpg",
+         "invite": 0,
+         "link": "/detail/n1",
+         "money": 1,
+         "title": "测试数据",
+         "year": 2021
       },
       {
+         "date": "06-01",
+         "des": "合作共赢，红包对半！",
          "id": 5,
-         "name": "关于我们",
-         "link": "/about"
+         "img": "/images/alipay/alipay.jpg",
+         "invite": 0,
+         "link": "/detail/n1",
+         "money": 1,
+         "title": "支付宝五月消费券活动",
+         "year": 2021
       }
    ],
    "hot": [
       {
          "id": 1,
-         "title": "支付宝5月消费券",
          "img": "/images/alipay/coupon.jpg",
-         "link": "/detail/h1"
+         "link": "/detail/h1",
+         "title": "支付宝5月消费券"
       },
       {
          "id": 2,
-         "title": "中国银行话费充值优惠",
          "img": "/images/other/bank.jpg",
-         "link": "/detail/h2"
+         "link": "/detail/h2",
+         "title": "中国银行话费充值优惠"
+      }
+   ],
+   "navbar": [
+      {
+         "id": 1,
+         "link": "/",
+         "name": "首页"
+      },
+      {
+         "id": 2,
+         "link": "/alipay",
+         "name": "支付宝"
+      },
+      {
+         "id": 3,
+         "link": "/invite",
+         "name": "邀请有奖"
+      },
+      {
+         "id": 4,
+         "link": "/chat",
+         "name": "聊天群"
+      },
+      {
+         "id": 5,
+         "link": "/about",
+         "name": "关于我们"
       }
    ],
    "new": [
       {
+         "date": "06-01",
+         "des": "合作共赢，红包对半！",
          "id": 1,
+         "img": "/images/alipay/alipay.jpg",
+         "link": "/detail/n1",
          "title": "支付宝邀请新人有奖活动",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/alipay/alipay.jpg",
-         "des": "合作共赢，红包对半！",
-         "link": "/detail/n1"
+         "year": 2021
       },
       {
+         "date": "06-01",
+         "des": "合作共赢，红包对半！",
          "id": 2,
-         "title": "哔哩哔哩邀请有奖活动",
-         "year": 2021,
-         "date": "06-01",
          "img": "/images/other/blibli.jpg",
-         "des": "合作共赢，红包对半！",
-         "link": "/detail/n2"
-      }
-   ],
-   "activity": [
-      {
-         "id": 1,
-         "title": "支付宝邀请新人有奖活动",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/alipay/alipay.jpg",
-         "des": "合作共赢，红包对半！",
-         "link": "/detail/n1",
-         "money": 0,
-         "invite": 1
-      },
-      {
-         "id": 2,
-         "title": "中国银行话费充值优惠",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/other/bank.jpg",
-         "des": "每月话费充值优惠！",
-         "link": "/detail/n1",
-         "money": 0,
-         "invite": 0
-      },
-      {
-         "id": 3,
+         "link": "/detail/n2",
          "title": "哔哩哔哩邀请有奖活动",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/other/blibli.jpg",
-         "des": "合作共赢，红包对半！",
-         "link": "/detail/n1",
-         "money": 0,
-         "invite": 1
-      },
-      {
-         "id": 4,
-         "title": "测试数据",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/other/bank.jpg",
-         "des": "每月话费充值优惠！",
-         "link": "/detail/n1",
-         "money": 1,
-         "invite": 0
-      },
-      {
-         "id": 5,
-         "title": "支付宝五月消费券活动",
-         "year": 2021,
-         "date": "06-01",
-         "img": "/images/alipay/alipay.jpg",
-         "des": "合作共赢，红包对半！",
-         "link": "/detail/n1",
-         "money": 1,
-         "invite": 0
+         "year": 2021
       }
    ]
 }

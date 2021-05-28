@@ -3,7 +3,7 @@
     <div class="Pagebg">
       <div class="container">
         <headers></headers>
-        <banner></banner>
+        <banner></banner>  
         <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '自助服务']"></tab>
         <hot :hots="hot"></hot>
         <new :news="news"></new>
@@ -15,7 +15,7 @@
 </template>
 <script>
 import Headers from "views/home/child/Header";
-import Banner from "views/home/child/Banner";
+import Banner from "views/home/child/Banner";   
 import Notice from "views/home/child/Notice";
 import Tab from "views/home/child/Tab";
 import Message from "views/home/child/Message";
@@ -30,7 +30,7 @@ export default {
   name: "Home",
   components: {
     Headers,
-    Banner,
+    Banner,  
     Tab,
     Message,
     New,
