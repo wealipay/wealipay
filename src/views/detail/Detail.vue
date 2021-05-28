@@ -20,42 +20,22 @@
           <!--文章详情-->
           <div class="row">
             <div class="news-nr-box">
-              <h3>香港各界对主席重要讲话反向热烈</h3>
+              <h3>{{details.title}}</h3>
               <h6>
-                <span>2017-07-10</span>
+                <span>{{details.year}}-{{details.date}}</span>
                 <span>
-                  &#12288;来自:
-                  <em href="index.html" title="懒人模板">懒人模板</em>
+                  &#12288;作者:
+                  <em href="" title="{{details.author}}">{{details.author}}</em>
                 </span>
-                <span style="margin-left:10px;">浏览次数:80</span>
               </h6>
               <p
                 class="text"
                 style="margin-top: 0px; margin-bottom: 28px; padding: 0px; word-wrap: break-word; font-family: &quot;Microsoft Yahei&quot;, Helvetica, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em;"
               >习近平主席1日在出席庆祝香港回归祖国20周年大会暨香港特别行政区第五届政府就职典礼时发表重要讲话，在香港社会引起强烈反响。香港各界人士认为，习主席的讲话为“一国两制”理论与实践的未来发展指明了方向、确认了准则，必将引领香港再创新的辉煌。</p>
-              <p
-                class="text"
-                style="margin-top: 0px; margin-bottom: 28px; padding: 0px; word-wrap: break-word; font-family: &quot;Microsoft Yahei&quot;, Helvetica, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em;"
-              >习主席在讲话中向香港社会、海内外、国际社会明确宣示了中央政府对香港的大政方针、治港方略，表明中央实行“一国两制”的初心不会改变，决心不会动摇。</p>
-              <p
-                class="text"
-                style="margin-top: 0px; margin-bottom: 28px; padding: 0px; word-wrap: break-word; font-family: &quot;Microsoft Yahei&quot;, Helvetica, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em;"
-              >习主席在讲话中提到，香港对国家历史、民族文化的教育宣传有待加强。对此，香港教育界人士表示，习主席的讲话对香港社会，尤其是年轻人正确认识香港与祖国的关系，具有指导意义。</p>
-              <p
-                class="text"
-                style="margin-top: 0px; margin-bottom: 28px; padding: 0px; word-wrap: break-word; font-family: &quot;Microsoft Yahei&quot;, Helvetica, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em;"
-              >习主席在讲话中还强调，发展是香港的第一要务，他引用香港俗语“苏州过后无艇搭”说明抓住机遇谋发展的重要性，让香港全港各区工商联会长卢锦钦印象深刻。</p>
-              <p
-                class="text"
-                style="margin-top: 0px; margin-bottom: 28px; padding: 0px; word-wrap: break-word; font-family: &quot;Microsoft Yahei&quot;, Helvetica, sans-serif; white-space: normal; background-color: rgb(255, 255, 255); text-indent: 2em;"
-              >香港民众表示，习主席视察香港，让香港人真切感受到了习主席的关怀，让民众对香港的未来充满信心</p>
-              <p>
-                <br />
-              </p>
+              
             </div>
-            
+
             <!--关键词-->
-            
           </div>
           <!--</right>-->
         </div>
@@ -70,6 +50,9 @@
 import Asides from "views/detail/Aside";
 import Headers from "views/home/child/Header";
 import Banner from "views/home/child/Banner";
+import { getDetail } from "network/detail";
+import { useRoute } from "vue-router";
+import { ref, onMounted, reactive, toRefs} from "vue";
 
 export default {
   name: "Detail",
@@ -77,6 +60,24 @@ export default {
     Asides,
     Headers,
     Banner
+  },
+  setup() {
+    const id = ref(0);
+    const route = useRoute();
+    const obj = reactive({
+      details: {}
+    });
+    onMounted(() => {
+      id.value = route.query.id;
+      getDetail(id.value).then(res => {
+        obj.details=res
+      });
+    });
+    return {
+      id,
+      getDetail,
+      ...toRefs(obj)
+    };
   }
 };
 </script>
