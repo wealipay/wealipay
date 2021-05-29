@@ -38,11 +38,11 @@
          "self": "0",
          "step": [
             {
-               "des": "1. 通过各大应用商店下载哔哩哔哩app软件，并安装。",
+               "des": "方式一： 通过浏览器/微信/QQ/支付宝扫描上方的二维码，输入手机号后下载哔哩哔哩app软件，并安装。",
                "image": "/images/blibli/invite.png"
             },
             {
-               "des": "安装成功后填写邀请码即可",
+               "des": "方式二：安装成功后填写邀请码 CLKNPSA 即可，有什么问题可相互联系！",
                "image": "/images/blibli/CLKNPSA.jpg"
             }
          ],
