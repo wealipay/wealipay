@@ -4,10 +4,12 @@
       <div class="article" id="md_article">
         <div class="articleBox module-wid clearfix">
           <div class="articleImgBor fl">
-						   <div class="article Img">
-							  <a title="香港各界对主席重要讲话反向热烈" href="index.htmlArticle-detail-id-771844.html"><img style="width:100%;" src="http://pic.files.mozhan.com/mozhan/20170710/92eba9314d42025b4240f8f9b0beaee7.jpg" alt="香港各界对主席重要讲话反向热烈"></a>
-						   </div>
-						</div>
+              <van-swipe autoplay="3000"  indicator-color="red" style="height:348px;">
+                <van-swipe-item><a href="/images/layout/alipay.jpg"><img style="width:100%;border-radius:5px;" src="/images/layout/alipay.jpg"></a></van-swipe-item>
+                <van-swipe-item><a href="/images/layout/wechat.jpg"><img style="width:100%;border-radius:5px;" src="/images/layout/wechat.jpg"></a></van-swipe-item>
+
+              </van-swipe>
+          </div>
           <div class="articleTab fr">
             <van-tabs border="true" title-active-color="red" v-model:active="active">
               <van-tab title="薅羊毛">
@@ -92,5 +94,4 @@ export default {
 };
 </script>
 <style>
-
 </style>

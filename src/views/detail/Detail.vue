@@ -36,7 +36,7 @@
                 :key="item"
               >
               <a :href="item.image"><img :src="item.image" style="display:block;border-radius:5px;"></a>
-              {{item.des}}</p>
+              &emsp;&emsp;{{item.des}}</p>
               <hr>
               <h3 style="background:skyblue; margin-top:8px;border-radius:5px;">操作步骤：</h3>
               <p
@@ -47,7 +47,7 @@
               >
               <a :href="item.image"><img :src="item.image" style="display:block;border-radius:5px;"></a>
 
-              {{item.des}}
+              &emsp;&emsp;{{item.des}}
               </p>
             </div>
 

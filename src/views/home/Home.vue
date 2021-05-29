@@ -23,7 +23,7 @@ import New from "views/home/child/New";
 import Hot from "views/home/child/Hot";
 import Footer from "views/home/child/Footer";
 
-import { db} from "network/db";
+import { getType } from "network/db";
 import { onMounted, ref, toRefs, reactive, computed } from "vue";
 
 export default {
@@ -44,10 +44,12 @@ export default {
       imitid.value = index;
     };
     onMounted(() => {
-      db().then(res => {
-        hot.value = res.hot;
-        news.value = res.new;
+      getType('hot').then(res => {
+        hot.value = res;
       });
+      getType('news').then(res=>{
+        news.value=res;
+      })
     });
     return {
       hot,
