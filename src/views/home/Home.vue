@@ -22,10 +22,8 @@ import Message from "views/home/child/Message";
 import New from "views/home/child/New";
 import Hot from "views/home/child/Hot";
 import Footer from "views/home/child/Footer";
-
 import { getType } from "network/db";
 import { onMounted, ref, toRefs, reactive, computed } from "vue";
-
 export default {
   name: "Home",
   components: {
