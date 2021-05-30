@@ -1,7 +1,7 @@
 <template>
   <div class="Pagebg TopologyLeft">
     <headers></headers>
-    <banner></banner>
+    <banner></banner>                   
     <div class="content" style="margin-bottom:55px;">
       <div class="content-box n-box">
         <div class="body-right">
@@ -75,8 +75,8 @@ export default {
   components: {
     Asides,
     Headers,
-    Banner
-  },
+    Banner  
+  },          
   setup() {
     const id = ref(0);
     const route = useRoute();

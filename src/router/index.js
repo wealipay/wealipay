@@ -5,6 +5,7 @@ const Invite = () => import("../views/invite/Invite");
 const Chat = () => import("../views/chat/Chat");
 const About = () => import("../views/about/About");
 const Detail = () => import("../views/detail/Detail");
+const Category = () => import("../views/category/Category");
 
 const routes = [
   {
@@ -22,7 +23,15 @@ const routes = [
     meta: {
       title: "支付宝活动"
     }
-  },
+  },                     
+  {
+    path: "/category",
+    name: "Category",
+    component: Category,
+    meta: {
+      title: "文章分类"
+    }
+  },                     
   {
     path: "/invite",
     name: "Invite",
