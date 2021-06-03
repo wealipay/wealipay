@@ -1,18 +1,9 @@
 <template>
   <div>
-    <div class="classifiCen clear" id="ProClass">
-      <div class="ProClassBg"></div>
-      <div class="about_title Themebg overflow">产品展示</div>
-      <ul class="product-class mt15">
-        <li>
-          <a title="热门推荐" class="Classtriangle first Themebghover" href="/Products-163497.html">热门推荐</a>
-          <div class="classBox"></div>
-        </li>
-      </ul>
-    </div>
+    
     <div class="body-left clearfix">
       <div class="pro_class_x clearfix mb15 ThemeFborder" id="ProClassLeft">
-        <div class="about_title Themebg overflow">产品展示</div>
+        <div class="about_title Themebg overflow">产品展x示</div>
         <ul class="left_class">
           <li>
             <a
