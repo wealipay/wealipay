@@ -12,7 +12,6 @@ import "./assets/css/layoutit.css";
 import "./assets/css/p_mb.css";
 import "./assets/css/photoswipe.css";
 import "./assets/css/customer_index_501108893.css";
-import "./assets/css/customer_inner_501108893.css";
 import "./assets/js/jquery.min";
 import "./assets/js/jquery.banner.revolution.min";
 import "./assets/js/slider";
@@ -21,6 +20,8 @@ import "./assets/js/slide";
 import "./assets/js/bootstrap.min";
 import "./assets/js/page";                 
 import 'vant/lib/index.css';        
+import "./assets/css/customer_inner_501108893.css";
+
 import {Swipe,SwipeItem,Tab,Tabs} from 'vant'
 
 createApp(App)

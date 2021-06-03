@@ -7,11 +7,11 @@
       <div class="content-box n-box">
         <div class="body-right">
           <div class="breadCrumb">
-            <div class="Crumb">
+            <div class="Crumb" v-for="item in invite" :key="item">
               <b>您当前的位置：</b>
               <a href="/">首页</a>
               <em>&gt;</em>
-              <a href="Article-index.html" class="Themefont">新闻动态</a>
+              <a href="" class="Themefont">{{item.pid}}</a>
             </div>
           </div>
           <div class="row">
@@ -44,7 +44,7 @@
                   />
                 </a>
               </div>
-            </div>                                                                                                                                                   
+            </div>
             <div class="group ThemeFborder clearfix">
               <div class="frwid fl">
                 <div class="text">
@@ -174,6 +174,7 @@ import Asides from "views/detail/Aside";
 import Headers from "views/home/child/Header";
 import Banner from "views/home/child/Banner";
 import { getDetail } from "network/detail";
+import { getType } from "network/db";
 import { useRoute } from "vue-router";
 import { ref, onMounted, reactive, toRefs } from "vue";
 
@@ -183,6 +184,18 @@ export default {
     Asides,
     Headers,
     Banner
+  },
+  setup() {
+    const pid = ref([]);
+    const invite = ref([]);
+    onMounted(() => {
+      getType("invite").then(res => {
+        invite.value = res;
+      });
+    });
+    return{
+      invite
+    }
   }
 };
 </script>
