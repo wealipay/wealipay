@@ -90,6 +90,6 @@ export default {
       invite,
       goDetail
     };
-  }
+  }                                                      
 };
 </script>
