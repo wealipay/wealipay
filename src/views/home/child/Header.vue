@@ -29,6 +29,7 @@
             <div class="header-nav">
               <c-navbar></c-navbar>
               <m-navbar></m-navbar>
+              <fm-navbar></fm-navbar>
               <div class="NavBoxBg" id="NavBoxBg">
                 <div id="NavBoxBtn"></div>
               </div>

@@ -3,7 +3,9 @@
     <div class="body-left clearfix">
       
       <div class="p_info_x Cenl mb15 ThemeFborder">
-        <div class="about_title Themebg overflow">邀请有奖</div>
+        <div class="about_title Themebg overflow">
+          <slot>邀请有奖活动列表</slot>
+        </div>
         <ul class="left_news">
           <li v-for="item in invite" :key="item">
             <a

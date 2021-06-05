@@ -68,9 +68,9 @@
               <h3 style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>视频演示：
               </h3>
-              <p style="border-radius:10px;background:limegreen;">
-                <video style="width:60%;border-radius:5px;margin-top:20px;" controls src="~assets/china.mp4"></video>
-              </p>
+              <div style="border-radius:10px;margin-bottom:20px;background:limegreen;">
+                <video style="width:65%;margin:0 auto;border-radius:5px;margin-top:20px;" poster="/video/china/china.jpg" controls src="/video/china/china.mp4"></video>
+              </div>
             </div>
 
             <!--关键词-->
