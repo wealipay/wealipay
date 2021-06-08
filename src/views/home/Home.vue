@@ -7,7 +7,6 @@
         <tab :tabClick="tab" :titles="['薅羊毛', '邀请有奖', '自助服务']"></tab>
         <hot :hots="hot"></hot>
         <new :news="news"></new>
-        <message></message>
         <footer></footer>
       </div>
     </div>

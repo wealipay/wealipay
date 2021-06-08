@@ -22,7 +22,7 @@ import "./assets/js/page";
 import 'vant/lib/index.css';        
 import "./assets/css/customer_inner_501108893.css";
 
-import {Swipe,SwipeItem,Tab,Tabs} from 'vant'
+import {Swipe,SwipeItem,Tab,Tabs,Tabbar,TabbarItem} from 'vant'
 
 createApp(App)
   .use(store)
@@ -31,4 +31,6 @@ createApp(App)
   .use(SwipeItem)
   .use(Tab)
   .use(Tabs)
+  .use(Tabbar)
+  .use(TabbarItem)
   .mount("#app");

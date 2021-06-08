@@ -1,7 +1,7 @@
 <template>
   <div class="Pagebg TopologyLeft">
     <headers></headers>
-    <banner></banner>
+    <banner></banner>                
     <div class="clearfix"></div>
     <div class="content">
       <div class="content-box n-box">
@@ -73,7 +73,7 @@ export default {
     Asides,
     Headers,
     Banner
-  },
+  },             
   setup() {
     const pid = ref([]);
     const invite = ref([]);

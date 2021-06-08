@@ -81,7 +81,7 @@ export default {
       });
       getType("invite").then(res => {
         invite.value = res;
-      });
+      });                              
       getType("self").then(res => {
         self.value = res;
       });
