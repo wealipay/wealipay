@@ -46,7 +46,7 @@
               <p
                 style="border-radius:10px;padding:5px;background:#3dc5aa;"
                 class="detail"
-                v-for="item in details.rule"
+                v-for="item in details.amount"
                 :key="item"
               >
                 <a :href="item.image">
