@@ -10,14 +10,15 @@
                   <div class="fullwidthbanner">
                     <van-swipe :autoplay="3000" indicator-color="red">
                       <van-swipe-item>
-                        <img
-                          src="https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg"
-                        />
+                        <img src="/images/banner/banner1.jpg" />
                       </van-swipe-item>
                       <van-swipe-item>
-                        <img src="https://gitee.com/wealipay/data/raw/master/images/swiper/banner2.jpg" />
+                        <img src="/images/banner/banner2.jpg" />
                       </van-swipe-item>
-                    </van-swipe>                                                                             
+                      <van-swipe-item>
+                        <img src="/images/banner/banner3.jpg" />
+                      </van-swipe-item>
+                    </van-swipe>
                   </div>
                 </div>
               </div>
@@ -35,7 +36,7 @@ export default {
 };
 </script>
 <style>
-  .van-swipe{
-    margin:0;
-  }
+.van-swipe {
+  margin: 0;
+}
 </style>
