@@ -21,9 +21,10 @@
             <van-tabs border="true" title-active-color="red" v-model:active="active">
               <van-tab title="薅羊毛">
                 <ul class="tabList" style="display:block;">
-                  <li v-for="item in money" :key="item"
-                      @click.prevent="goDetail(item.id)">
-                    <a :title="item.title"  class="Themefonthover">
+                  <li v-for="item in money" :key="item">
+                    <a 
+                      @click.prevent="goDetail(item.id)"
+                     :title="item.title"  class="Themefonthover">
                       <span class="overflow fl">{{item.title}}</span>
                       <i class="fr">{{item.year}}-{{item.date}}</i>
                     </a>
