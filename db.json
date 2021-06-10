@@ -48,8 +48,8 @@
          ],
          "video": [
             {
-               "cover": "/video/china/china.jpg",
-               "src": "/video/china/telephone.mp4"
+               "cover": "",
+               "src": ""
             }
          ],
          "invite": 1,
@@ -81,8 +81,8 @@
          ],
          "video": [
             {
-               "cover": "/video/china/china.jpg",
-               "src": "/video/china/telephone.mp4"
+               "cover": "/images/alipay/signCover.jpg",
+               "src": "/video/alipay/taobaoSign.mp4"
             }
          ],
          "invite": 0,
