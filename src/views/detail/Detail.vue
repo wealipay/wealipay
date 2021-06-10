@@ -53,7 +53,7 @@
                   <img :src="item.image" style="display:block;border-radius:5px;" />
                 </a>
                 &emsp;&emsp;{{item.des}}
-              </p>
+              </p>                                                                    
 
               <h3 style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>视频演示：

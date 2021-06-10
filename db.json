@@ -48,8 +48,8 @@
          ],
          "video": [
             {
-               "cover": "https://gitee.com/wealipay/data/raw/master/images/swiper/banner1.jpg",
-               "src": "视频地址"
+               "cover": "/video/china/china.jpg",
+               "src": "/video/china/telephone.mp4"
             }
          ],
          "invite": 1,

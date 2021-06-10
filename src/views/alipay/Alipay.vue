@@ -25,7 +25,10 @@
                 </span>
               </h6>
               <div class="lihadran">
-                快速导航:
+                <a href="#red">
+                  <span style="background:#3dc5aa;">红包金额</span>
+                </a>
+
                 <a href="#pink">
                   <span style="background:pink;">详细规则</span>
                 </a>
@@ -36,6 +39,46 @@
                   <span style="background:limegreen;">视频演示</span>
                 </a>
               </div>
+              <h3 style="background:#3dc5aa;border-radius:5px;">
+                <a name="pink"></a>红包金额：
+              </h3>
+              <p
+                style="border-radius:10px;padding:5px;background:#3dc5aa;"
+                class="detail"
+                v-for="item in details.amount"
+                :key="item"
+              >
+                <a :href="item.image">
+                  <img :src="item.image" style="display:block;border-radius:5px;" />
+                </a>
+                &emsp;&emsp;{{item.des}}
+              </p>
+              <h3 style="background:limegreen;border-radius:5px;">
+                <a name="limegreen"></a>视频演示：
+              </h3>
+              <div style="border-radius:10px;background:limegreen;">
+                <video
+                  style="width:65%;margin:0 auto;border-radius:5px;margin-top:20px;"
+                  :poster="item.video.cover"
+                  controls
+                  :src="item.video.src"
+                ></video>
+              </div>
+              <h3 style="background:skyblue; margin-top:8px;border-radius:5px;">
+                <a name="skyblue"></a>操作步骤：
+              </h3>
+              <p
+                style="background:skyblue;text-align:left;border-radius:10px;padding:5px;"
+                class="detail"
+                v-for="item in details.step"
+                :key="item"
+              >
+                <a :href="item.image">
+                  <img :src="item.image" style="display:block;border-radius:5px;" />
+                </a>
+                &emsp;&emsp;{{item.des}}
+              </p>
+
               <h3 style="background:pink;border-radius:5px;">
                 <a name="pink"></a>详细规则：
               </h3>
@@ -51,26 +94,6 @@
                 &emsp;&emsp;{{item.des}}
               </p>
               <hr />
-              <h3 style="background:skyblue; margin-top:8px;border-radius:5px;">
-                <a name="skyblue"></a>操作步骤：
-              </h3>
-              <p
-                style="background:skyblue;text-align:left;border-radius:10px;padding:5px;"
-                class="detail"
-                v-for="item in details.step"
-                :key="item"
-              >
-                <a :href="item.image">
-                  <img :src="item.image" style="display:block;border-radius:5px;" />
-                </a>
-                &emsp;&emsp;{{item.des}}
-              </p>
-              <h3 style="background:limegreen;border-radius:5px;">
-                <a name="limegreen"></a>视频演示：
-              </h3>
-              <div style="border-radius:10px;background:limegreen;">
-                <video style="width:65%;margin:0 auto;border-radius:5px;margin-top:20px;" poster="/video/china/china.jpg" controls src="/video/china/china.mp4"></video>
-              </div>
             </div>
 
             <!--关键词-->
@@ -78,9 +101,7 @@
           <!--</right>-->
         </div>
         <asides>
-          <template v-slot>
-            支付宝活动列表
-          </template>
+          <template v-slot>支付宝活动列表</template>
         </asides>
         <!---->
         <div class="clearfix"></div>
