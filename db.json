@@ -54,7 +54,7 @@
          ],
          "invite": 1,
          "money": 0,
-         "self": "0",
+         "self": 0,
          "hot": 1,
          "new": 1,
          "amount": [
@@ -87,7 +87,7 @@
          ],
          "invite": 0,
          "money": 1,
-         "self": "0",
+         "self": 0,
          "hot": 1,
          "new": 1,
          "amount": [
@@ -151,7 +151,7 @@
          ],
          "invite": 1,
          "money": 0,
-         "self": "0",
+         "self": 0,
          "hot": 1,
          "new": 1,
          "amount": [

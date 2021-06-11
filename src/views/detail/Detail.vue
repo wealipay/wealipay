@@ -55,18 +55,18 @@
                 &emsp;&emsp;{{item.des}}
               </p>                                                                    
 
-              <h3 style="background:limegreen;border-radius:5px;">
+              <h3 v-if="details.video"  style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>视频演示：
               </h3>
-              <div v-for="item in details.video" :key="item" style="border-radius:10px;margin-bottom:20px;background:limegreen;">
-                <video
+              <divs v-for="item in details.video" :key="item" style="border-radius:10px;margin-bottom:20px;background:limegreen;">
+                <video 
                   style="width:65%;margin:0 auto;border-radius:5px;margin-top:20px;"
                   :poster="item.cover"
                   controls
                   :src="item.src"
                 ></video>
-              </div>
-              <h3 style="background:skyblue; margin-top:8px;border-radius:5px;">
+              </divs>
+              <h3 v-if="details.step" style="background:skyblue; margin-top:8px;border-radius:5px;">
                 <a name="skyblue"></a>操作步骤：
               </h3>
               <p
@@ -81,7 +81,7 @@
                 &emsp;&emsp;{{item.des}}
               </p>
 
-              <h3 style="background:pink;border-radius:5px;">
+              <h3 v-if="details.rule"  style="background:pink;border-radius:5px;">
                 <a name="pink"></a>详细规则：
               </h3>
               <p
