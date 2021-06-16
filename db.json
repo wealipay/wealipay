@@ -76,13 +76,13 @@
          "rule": [
             {
                "des": "每天都可以签到领红包，红包的有效期为一天，商品金额只要大于等于红包金额即可抵扣！",
-               "image": "/images/alipay/taobaof.jpg"
+               "image": "/images/list/2/2.jpg"
             }
          ],
          "video": [
             {
-               "cover": "/images/alipay/signCover.jpg",
-               "src": "/video/alipay/taobaoSign.mp4"
+               "cover": "/images/list/2/cover.jpg",
+               "src": "/images/list/2/video.mp4"
             }
          ],
          "invite": 0,
