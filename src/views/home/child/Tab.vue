@@ -22,9 +22,11 @@
               <van-tab title="薅羊毛">
                 <ul class="tabList" style="display:block;">
                   <li v-for="item in money" :key="item">
-                    <a 
+                    <a
                       @click.prevent="goDetail(item.id)"
-                     :title="item.title"  class="Themefonthover">
+                      :title="item.title"
+                      class="Themefonthover"
+                    >
                       <span class="overflow fl">{{item.title}}</span>
                       <i class="fr">{{item.year}}-{{item.date}}</i>
                     </a>
@@ -48,8 +50,11 @@
               <van-tab title="自助服务">
                 <ul class="tabList" style="display:block;">
                   <li v-for="item in self" :key="item">
+                    <a
                       @click.prevent="goDetail(item.id)"
-                    <a :title="item.title"  class="Themefonthover">
+                      :title="item.title"
+                      class="Themefonthover"
+                    >
                       <span class="overflow fl">{{item.title}}</span>
                       <i class="fr">{{item.year}}-{{item.date}}</i>
                     </a>
@@ -82,7 +87,7 @@ export default {
       });
       getType("invite").then(res => {
         invite.value = res;
-      });                              
+      });
       getType("self").then(res => {
         self.value = res;
       });
@@ -91,7 +96,7 @@ export default {
       curIndex.value = index;
     };
     const goDetail = id => {
-      router.push({path:'/detail',query:{id}});
+      router.push({ path: "/detail", query: { id } });
     };
 
     return {

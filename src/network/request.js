@@ -1,7 +1,7 @@
 import axios from "axios";
 export function request(config) {
   const instance = axios.create({
-    baseURL: "https://my-json-server.typicode.com/wealipay/wealipay",
+    baseURL: "https://my-json-server.typicode.com/wealipay/",
     timeout: 5000,
   });
   instance.interceptors.request.use(
