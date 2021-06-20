@@ -53,19 +53,34 @@
                   <img :src="item.image" style="display:block;border-radius:5px;" />
                 </a>
                 &emsp;&emsp;{{item.des}}
-              </p>                                                                    
+              </p>
 
-              <h3 v-if="details.video"  style="background:limegreen;border-radius:5px;">
+              <h3 v-if="details.video" style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>视频演示：
               </h3>
-              <divs v-for="item in details.video" :key="item" style="border-radius:10px;margin-bottom:20px;background:limegreen;">
-                <video 
+              <iframe
+                src="//player.bilibili.com/player.html?aid=888627590&bvid=BV1SK4y137pk&cid=355842269&page=1"
+                scrolling="no"
+                border=""
+                frameborder="no"
+                framespacing="0"
+                allowfullscreen="true"
+                width="100%"
+                controls
+              ></iframe>
+        
+              <div
+                v-for="item in details.video"
+                :key="item"
+                style="border-radius:10px;margin-bottom:20px;background:limegreen;"
+              >
+                <video
                   style="width:65%;margin:0 auto;border-radius:5px;margin-top:20px;"
                   :poster="item.cover"
                   controls
                   :src="item.src"
                 ></video>
-              </divs>
+              </div>
               <h3 v-if="details.step" style="background:skyblue; margin-top:8px;border-radius:5px;">
                 <a name="skyblue"></a>操作步骤：
               </h3>
@@ -81,7 +96,7 @@
                 &emsp;&emsp;{{item.des}}
               </p>
 
-              <h3 v-if="details.rule"  style="background:pink;border-radius:5px;">
+              <h3 v-if="details.rule" style="background:pink;border-radius:5px;">
                 <a name="pink"></a>详细规则：
               </h3>
               <p
