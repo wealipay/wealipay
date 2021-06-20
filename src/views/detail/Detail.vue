@@ -67,7 +67,7 @@
                 allowfullscreen="true"
                 width="100%"
               ></iframe>
-              <h3 v-if="details.video" style="background:limegreen;border-radius:5px;">
+              <h3  style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>高清视频演示：
               </h3>
 
