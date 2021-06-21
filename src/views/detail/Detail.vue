@@ -55,18 +55,7 @@
                 &emsp;&emsp;{{item.des}}
               </p>
 
-              <h3 v-if="details.video" style="background:limegreen;border-radius:5px;">
-                <a name="limegreen"></a>B站视频演示：
-              </h3>
-              <iframe
-                src="//player.bilibili.com/player.html?aid=888627590&bvid=BV1SK4y137pk&cid=355842269&page=1"
-                scrolling="no"
-                border="0"
-                frameborder="no"
-                framespacing="0"
-                allowfullscreen="true"
-                width="100%"
-              ></iframe>
+          
               <h3  style="background:limegreen;border-radius:5px;">
                 <a name="limegreen"></a>高清视频演示：
               </h3>
