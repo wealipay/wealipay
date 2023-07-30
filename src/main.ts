@@ -1,14 +1,13 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import { createApp } from "vue";
+import { createPinia } from "pinia";
+import App from './App.vue';
+import router from './router/index';
+import 'vant/lib/index.css'
 
-import App from './App.vue'
-import router from './router'
+const app=createApp(App)
+const pinia=createPinia()
 
-import './assets/main.css'
-
-const app = createApp(App)
-
-app.use(createPinia())
+app.use(pinia)
 app.use(router)
 
 app.mount('#app')
