@@ -6,7 +6,7 @@ import OrderView from '@/views/tabs/order/OrderView.vue'
 
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHistory(),
     routes: [
         {
             path: '/',

@@ -9,7 +9,7 @@ const active=ref(route.name as string)
 
 watch(active,(nv)=>{
     router.push({
-        name:nv
+        name:nv,
     })
 })
 </script>
