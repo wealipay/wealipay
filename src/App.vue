@@ -1,7 +1,15 @@
 <script setup lang='ts'>
-import {RouterView} from 'vue-router'    
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-    <RouterView />
+  <RouterView />
 </template>
+
+<style>
+@import 'normalize.css';
+#app {
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+</style>
