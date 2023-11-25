@@ -3,5 +3,5 @@
 </script>
 
 <template>
-    MeView
+    MeViewLihafrr
 </template>
